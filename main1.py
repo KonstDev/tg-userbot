@@ -4,6 +4,7 @@ from pyrogram.types import ChatPermissions
 import translators as ts
 import whois
 import time
+import qrcode
 import os
 
 from time import sleep
@@ -86,6 +87,23 @@ def trans_late(_, msg):
     #print(ret_str)
     msg.edit(ret_str)
 # eval
+
+os.system('mkdir pics')
+global n
+n = 0
+
+@app.on_message(filters.command("qr", prefixes=".") & filters.me)
+def qr(_, msg):
+    global n
+    n = 0
+    s = str(msg.text)
+    img = qrcode.make(s)
+    type(img)
+    #print(msg)
+    path = "code" + str(n) + ".png"
+    img.save(path)
+    msg.edit('QR generated!')
+    app.send_photo(msg.chat.id, path, reply_to_message_id=msg.message_id)
 
 newlang = 'en'
 @app.on_message(filters.command("eval", prefixes=".") & filters.me)
