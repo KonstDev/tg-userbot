@@ -9,6 +9,7 @@ Install  Python and Use the package manager [pip](https://pip.pypa.io/en/stable/
 sudo apt-get install python3
 pip3 install whois
 sudo apt-get install whois
+pip3 install qrcode[pil]
 pip3 install Pyrogram
 pip3 install translators
 ```
