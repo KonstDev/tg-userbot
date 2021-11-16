@@ -40,7 +40,7 @@ ex: `.whois google.com`
 `.eval <expression> ` - Gives result of expression.    
 ex: `.eval 2+2**2+4`  
 
-`.eval_l <commang>` - run command on your machine and return stdout.  
+`.eval_l <commanв>` - run command on your machine and return stdout.  
 ex: `.eval_l lscpu`
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
