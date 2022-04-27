@@ -20,7 +20,7 @@ Clone this repo using [git](https://git-scm.com/) and run python-3 file "main1.p
 ```bash
 sudo apt-get install git
 git clone https://github.com/KonstDev/tg-userbot
-cd ubot
+cd tg-userbot
 python3 main1.py
 ``` 
 
